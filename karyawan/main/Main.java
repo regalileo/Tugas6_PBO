@@ -9,23 +9,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Perbaiki argumen konstruktor Manajer
+        
         Manajer manajer = new Manajer("M001", "Yulhan Wahyudin", 10000000, 5000000, 2000000);
 
-        // Pastikan argumen konstruktor Karyawan sesuai dengan definisi kelas Karyawan
         Karyawan karyawan = new Karyawan("K001", "Avantika Rinjani", 5000000, 10, 50000);
 
-        // Cetak slip gaji
         manajer.cetakSlipGaji();
         karyawan.cetakSlipGaji();
 
-        // Tambahkan menu untuk Toshiba dan MacBook
+        // Tambahan menu untuk Toshiba dan MacBook
         Scanner scanner = new Scanner(System.in);
-        Laptop laptop; // Ubah tipe menjadi Laptop
+        Laptop laptop; 
 
         System.out.println("\nChoose a laptop: 1. Toshiba  2. MacBook");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         if (choice == 1) {
             laptop = new Toshiba();
